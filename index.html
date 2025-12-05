@@ -1,43 +1,628 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amethyst Studio Code</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="hero">
-    <nav>
-        <div class="logo">🟪 Amethyst Studio</div>
-        <ul>
-            <li><a href="index.html">Domů</a></li>
-            <li><a href="docs.html">Dokumentace</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amethyst Studio - Moderní Vývoj</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loading-content">
+        <div class="loading-logo">
+          <div class="logo-gem"></div>
+        </div>
+        <div class="loading-bar">
+          <div class="loading-progress"></div>
+        </div>
+        <p class="loading-text">Načítání Amethyst Studio...</p>
+      </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="logo-gem"></div>
+          <span>Amethyst Studio</span>
+        </div>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#about">O nás</a>
+          <a href="docs.html">Dokumentace</a>
+          <a href="#contact" class="nav-cta">Kontakt</a>
+        </div>
+      </div>
     </nav>
 
-    <div class="hero-content fade-in">
-        <h1>Amethyst Studio Code</h1>
-        <p>Magický prostor pro vývojáře – rychlý, elegantní a krásně fialový.</p>
-        <a href="docs.html" class="btn">Začít →</a>
-    </div>
-</header>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-badge">✨ Nová verze 2.0 dostupná</div>
+        <h1 class="hero-title">
+          <span class="title-line">Vytváříme budoucnost</span>
+          <span class="title-line gradient-text">moderního vývoje</span>
+        </h1>
+        <p class="hero-subtitle">
+          Amethyst Studio je vývojářská platforma nové generace, která kombinuje
+          sílu, eleganci a jednoduchost.
+        </p>
+        <div class="hero-buttons">
+          <a href="docs.html" class="btn btn-primary">
+            <span>Začít nyní</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M7.5 15L12.5 10L7.5 5"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="#features" class="btn btn-secondary">
+            <span>Zjistit více</span>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">10K+</div>
+            <div class="stat-label">Aktivních uživatelů</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Projektů</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">99.9%</div>
+            <div class="stat-label">Uptime</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-card card-1">
+          <div class="card-icon">⚡</div>
+          <div class="card-text">Rychlý vývoj</div>
+        </div>
+        <div class="floating-card card-2">
+          <div class="card-icon">🔒</div>
+          <div class="card-text">Bezpečnost</div>
+        </div>
+        <div class="floating-card card-3">
+          <div class="card-icon">🚀</div>
+          <div class="card-text">Výkon</div>
+        </div>
+      </div>
+    </section>
 
-<section class="features fade-in">
-    <div class="feature">
-        <h3>⚡ Rychlost</h3>
-        <p>Optimalizované jádro pro bleskové reakce.</p>
-    </div>
-    <div class="feature">
-        <h3>🎨 Styl</h3>
-        <p>Moderní fialový design inspirovaný krystalem ametystu.</p>
-    </div>
-    <div class="feature">
-        <h3>🧩 Modularita</h3>
-        <p>Přizpůsob si projekt přesně podle sebe.</p>
-    </div>
-</section>
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Proč Amethyst Studio?</h2>
+          <p class="section-subtitle">
+            Všechno, co potřebuješ pro úspěšný projekt
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect
+                  x="5"
+                  y="5"
+                  width="30"
+                  height="30"
+                  rx="5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M15 20L18 23L25 16"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Moderní Architektura</h3>
+            <p>
+              Postaveno na nejnovějších technologiích pro maximální výkon a
+              škálovatelnost.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="15"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M20 12V20L26 23"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Real-time Synchronizace</h3>
+            <p>
+              Okamžitá synchronizace dat napříč všemi zařízeními a platformami.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path
+                  d="M20 5L25 15H35L27 22L30 32L20 26L10 32L13 22L5 15H15L20 5Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>AI-Powered</h3>
+            <p>
+              Inteligentní asistenty a automatizace pro rychlejší development.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect
+                  x="8"
+                  y="12"
+                  width="24"
+                  height="20"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path d="M8 18H32" stroke="currentColor" stroke-width="2" />
+                <circle cx="13" cy="15" r="1" fill="currentColor" />
+                <circle cx="17" cy="15" r="1" fill="currentColor" />
+                <circle cx="21" cy="15" r="1" fill="currentColor" />
+              </svg>
+            </div>
+            <h3>Cloud-Native</h3>
+            <p>
+              Plně cloudová infrastruktura s automatickým škálováním a backupy.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path
+                  d="M20 5C11.7 5 5 11.7 5 20C5 28.3 11.7 35 20 35C28.3 35 35 28.3 35 20C35 11.7 28.3 5 20 5Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M20 12V20L26 26"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Analytika v reálném čase</h3>
+            <p>Detailní metriky a insights pro lepší rozhodování.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path
+                  d="M20 8L8 14L20 20L32 14L20 8Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8 20L20 26L32 20"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8 26L20 32L32 26"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Modulární Design</h3>
+            <p>
+              Flexibilní architektura umožňující snadnou customizaci a
+              rozšíření.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script src="script.js"></script>
-</body>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>O Amethyst Studio</h2>
+            <p>
+              Jsme tým vášnivých vývojářů, kteří věří, že moderní vývoj by měl
+              být rychlý, efektivní a hlavně zábavný. Amethyst Studio vzniklo z
+              potřeby mít nástroj, který skutečně rozumí potřebám moderních
+              vývojářů.
+            </p>
+            <p>
+              Naše platforma kombinuje sílu enterprise-grade technologií s
+              jednoduchostí použití, kterou oceníte každý den. Od malých
+              startupů až po velké korporace - Amethyst Studio škáluje s vámi.
+            </p>
+            <a href="docs.html" class="btn btn-primary"
+              >Přejít na dokumentaci</a
+            >
+          </div>
+          <div class="about-visual">
+            <div class="code-window">
+              <div class="code-header">
+                <div class="code-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <span class="code-title">main.lua</span>
+              </div>
+              <div class="code-content">
+                <pre><code><span class="code-keyword">local</span> Amethyst = <span class="code-function">require</span>(<span class="code-string">"Amethyst"</span>)
+
+<span class="code-keyword">local</span> app = Amethyst.<span class="code-function">new</span>({
+    name = <span class="code-string">"MyProject"</span>,
+    version = <span class="code-string">"1.0.0"</span>
+})
+
+app:<span class="code-function">initialize</span>()
+app:<span class="code-function">run</span>()</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Připraven začít?</h2>
+          <p>
+            Připoj se k tisícům vývojářů, kteří už používají Amethyst Studio
+          </p>
+          <div class="cta-buttons">
+            <a href="docs.html" class="btn btn-primary btn-large">
+              <span>Začít zdarma</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M9 18L15 12L9 6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="mailto:contact@amethyst.studio"
+              class="btn btn-secondary btn-large"
+            >
+              <span>Kontaktovat nás</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <div class="logo-gem"></div>
+              <span>Amethyst Studio</span>
+            </div>
+            <p>Moderní vývojářská platforma pro budoucnost.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Produkt</h4>
+            <a href="#features">Features</a>
+            <a href="docs.html">Dokumentace</a>
+            <a href="#">API Reference</a>
+            <a href="#">Changelog</a>
+          </div>
+          <div class="footer-section">
+            <h4>Komunita</h4>
+            <a href="#">Discord</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="footer-section">
+            <h4>Firma</h4>
+            <a href="#about">O nás</a>
+            <a href="#">Kariéra</a>
+            <a href="#">Kontakt</a>
+            <a href="#">Podmínky použití</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Amethyst Studio. Všechna práva vyhrazena.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Chat Bot -->
+    <div class="chat-bot" id="chatBot">
+      <div class="chat-bot-header">
+        <div class="chat-bot-info">
+          <div class="chat-bot-avatar">🔮</div>
+          <div>
+            <div class="chat-bot-name">Amethyst Assistant</div>
+            <div class="chat-bot-status" id="botStatus">
+              <span class="status-dot"></span>
+              <span id="statusText">Online</span>
+            </div>
+          </div>
+        </div>
+        <div class="chat-bot-actions">
+          <button class="chat-action-btn" onclick="showChatMenu()" title="Menu">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="5" r="1.5" fill="currentColor" />
+              <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+              <circle cx="12" cy="19" r="1.5" fill="currentColor" />
+            </svg>
+          </button>
+          <button class="chat-action-btn" onclick="toggleChat()" title="Zavřít">
+            ✕
+          </button>
+        </div>
+      </div>
+
+      <!-- Chat Menu -->
+      <div class="chat-menu" id="chatMenu">
+        <button onclick="clearChat()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+          </svg>
+          Smazat historii
+        </button>
+        <button onclick="exportChat()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+          </svg>
+          Export konverzace
+        </button>
+        <button onclick="toggleDarkMode()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+          </svg>
+          Změnit téma
+        </button>
+      </div>
+
+      <div class="chat-bot-messages" id="chatMessages">
+        <div class="chat-message bot-message">
+          <div class="message-avatar">🔮</div>
+          <div class="message-content">
+            <p>Ahoj! 👋 Jsem Amethyst Assistant, tvůj AI pomocník.</p>
+            <p>Jak se jmenuješ? Rád bych tě lépe poznal! 😊</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typing Indicator -->
+      <div class="typing-indicator" id="typingIndicator">
+        <div class="message-avatar">🔮</div>
+        <div class="typing-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Suggestions -->
+      <div class="chat-suggestions" id="chatSuggestions">
+        <button onclick="askQuestion('Jak začít s vývojem?')">
+          📚 Jak začít?
+        </button>
+        <button onclick="askQuestion('Jaké jsou možnosti instalace?')">
+          ⚙️ Instalace
+        </button>
+        <button onclick="askQuestion('Ukaž mi základní příklad')">
+          💡 Příklady
+        </button>
+      </div>
+
+      <div class="chat-bot-input">
+        <button
+          class="input-action-btn"
+          onclick="showQuickCommands()"
+          title="Rychlé příkazy"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <rect
+              x="3"
+              y="3"
+              width="7"
+              height="7"
+              rx="1"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <rect
+              x="14"
+              y="3"
+              width="7"
+              height="7"
+              rx="1"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <rect
+              x="3"
+              y="14"
+              width="7"
+              height="7"
+              rx="1"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <rect
+              x="14"
+              y="14"
+              width="7"
+              height="7"
+              rx="1"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+        <input
+          type="text"
+          id="chatInput"
+          placeholder="Zeptej se na cokoli..."
+          onkeypress="handleChatEnter(event)"
+          oninput="handleInputChange()"
+        />
+        <button class="input-action-btn" onclick="sendMessage()" id="sendBtn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path
+              d="M2 10L18 2L10 18L8 11L2 10Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Quick Commands Panel -->
+      <div class="quick-commands-panel" id="quickCommandsPanel">
+        <div class="quick-commands-header">
+          <h4>Rychlé příkazy</h4>
+          <button onclick="hideQuickCommands()">✕</button>
+        </div>
+        <div class="quick-commands-list">
+          <button onclick="executeCommand('/help')">
+            <span class="command-icon">❓</span>
+            <div>
+              <div class="command-name">/help</div>
+              <div class="command-desc">Zobrazit nápovědu</div>
+            </div>
+          </button>
+          <button onclick="executeCommand('/docs')">
+            <span class="command-icon">📖</span>
+            <div>
+              <div class="command-name">/docs</div>
+              <div class="command-desc">Otevřít dokumentaci</div>
+            </div>
+          </button>
+          <button onclick="executeCommand('/example')">
+            <span class="command-icon">💻</span>
+            <div>
+              <div class="command-name">/example</div>
+              <div class="command-desc">Generovat příklad kódu</div>
+            </div>
+          </button>
+          <button onclick="executeCommand('/search')">
+            <span class="command-icon">🔍</span>
+            <div>
+              <div class="command-name">/search</div>
+              <div class="command-desc">Hledat v dokumentaci</div>
+            </div>
+          </button>
+          <button onclick="executeCommand('/contact')">
+            <span class="command-icon">💬</span>
+            <div>
+              <div class="command-name">/contact</div>
+              <div class="command-desc">Kontaktovat podporu</div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Bot Toggle Button -->
+    <button class="chat-bot-toggle" onclick="toggleChat()" id="chatToggle">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <span class="chat-notification">1</span>
+    </button>
+
+    <!-- Interactive Tutorial -->
+    <div class="tutorial-overlay" id="tutorialOverlay">
+      <div class="tutorial-content">
+        <div class="tutorial-step" id="tutorialStep">
+          <div class="tutorial-header">
+            <h3>Vítej v Amethyst Studio! 🎉</h3>
+            <button class="tutorial-close" onclick="closeTutorial()">✕</button>
+          </div>
+          <div class="tutorial-body">
+            <p>Rychlý průvodce ti ukáže základní funkce platformy.</p>
+            <div class="tutorial-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+              </div>
+              <span class="progress-text"
+                >Krok <span id="currentStep">1</span> z
+                <span id="totalSteps">5</span></span
+              >
+            </div>
+          </div>
+          <div class="tutorial-footer">
+            <button class="btn-secondary" onclick="skipTutorial()">
+              Přeskočit
+            </button>
+            <button class="btn-primary" onclick="nextTutorialStep()">
+              Další
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
